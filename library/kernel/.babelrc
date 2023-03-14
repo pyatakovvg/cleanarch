@@ -1,0 +1,15 @@
+{
+  "presets": [
+    "babel-preset-mobx",
+    "@babel/preset-typescript"
+  ],
+  "plugins": [
+    ["module-resolver", {
+      "alias": {
+        "@models": "./src/models",
+        "@repositories": "./src/repositories",
+        "@services": "./src/services"
+      }
+    }]
+  ]
+}

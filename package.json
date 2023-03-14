@@ -1,0 +1,39 @@
+{
+  "name": "root",
+  "private": true,
+  "scripts": {
+    "audit": "npx improved-yarn-audit --min-severity moderate --ignore-dev-deps",
+    "build": "npx yarn workspaces run build"
+  },
+  "dependencies": {
+    "reflect-metadata": "0.1.13",
+    "ts-serializable": "3.0.28",
+    "typescript": "4.9.5"
+  },
+  "devDependencies": {
+    "@types/node": "18.11.9",
+    "@types/styled-components": "5.1.26",
+    "audit-ci": "5.1.2",
+    "improved-yarn-audit": "3.0.0",
+    "lerna": "6.4.1",
+    "lerna-update-wizard": "1.1.2"
+  },
+  "license": "MIT",
+  "workspaces": [
+    "helpers/utils",
+    "library/kernel",
+    "library/di",
+    "library/workbox",
+    "library/kit",
+    "library/app",
+    "packages/moment",
+    "packages/numeral",
+    "widgets/profile",
+    "library/design",
+    "modules/main",
+    "modules/article",
+    "modules/cart",
+    "modules/sign-in",
+    "app/blog"
+  ]
+}
